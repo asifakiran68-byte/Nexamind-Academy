@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexamind Academy - Skill Development Center</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(168, 85, 247, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.2);
+        }
+    </style>
+</head>
+<body class="gradient-bg text-slate-100 min-h-screen selection:bg-purple-500 selection:text-white pb-16">
+
+    <!-- Header Section -->
+    <header class="relative overflow-hidden py-16 px-4 text-center">
+        <!-- Decorative blurred glowing circles -->
+        <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-600/20 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-1/4 w-80 h-80 bg-blue-600/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="px-4 py-1.5 bg-purple-500/15 text-purple-300 rounded-full text-xs font-semibold tracking-wider uppercase border border-purple-500/30">
+                Admissions Open • 1-Month Intensive Programs
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mt-6 bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-purple-300">
+                NEXAMIND ACADEMY
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mt-4 max-w-2xl mx-auto">
+                Empower your mind, transform your life, and elevate your professional skills with our expert-led short courses.
+            </p>
+        </div>
+    </header>
+
+    <!-- Key Quick Highlights Bar -->
+    <section class="max-w-5xl mx-auto px-4 mb-16">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
+            <div class="text-center p-3">
+                <div class="text-purple-400 text-2xl mb-1"><i class="fa-regular fa-clock"></i></div>
+                <div class="text-xs text-slate-400 uppercase tracking-wider">Duration</div>
+                <div class="text-lg font-bold text-slate-200">1 Month</div>
+            </div>
+            <div class="text-center p-3 border-l border-slate-700/50">
+                <div class="text-purple-400 text-2xl mb-1"><i class="fa-solid fa-wallet"></i></div>
+                <div class="text-xs text-slate-400 uppercase tracking-wider">Course Fee</div>
+                <div class="text-lg font-bold text-slate-200">5,000 PKR</div>
+            </div>
+            <div class="text-center p-3 border-l border-slate-700/50 col-span-2 md:col-span-1">
+                <div class="text-purple-400 text-2xl mb-1"><i class="fa-solid fa-phone"></i></div>
+                <div class="text-xs text-slate-400 uppercase tracking-wider">Call / WhatsApp</div>
+                <div class="text-lg font-bold text-slate-200">03079043130</div>
+            </div>
+            <div class="text-center p-3 border-l border-slate-700/50 col-span-2 md:col-span-1">
+                <div class="text-purple-400 text-2xl mb-1"><i class="fa-regular fa-envelope"></i></div>
+                <div class="text-xs text-slate-400 uppercase tracking-wider">Email Inquiry</div>
+                <div class="text-sm font-bold text-slate-200 truncate mt-1">asifakiran68@gmail.com</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content: Courses offered -->
+    <main class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold tracking-tight">Explore Our Professional Modules</h2>
+            <p class="text-slate-400 mt-2">Click on any course card to reveal the weekly module breakdown</p>
+        </div>
+
+        <!-- Course Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card 1: Spoken English -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between cursor-pointer" onclick="toggleOutline('spoken-english')">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 text-xl">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded bg-blue-500/10 text-blue-300">Popular</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Spoken English & Communication</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Overcome stage fright, master fluid conversations, correct pronunciation, and build corporate-level vocabulary.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/80">
+                    <button class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1">
+                        <span>Show Weekly Outline</span>
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300" id="icon-spoken-english"></i>
+                    </button>
+                    <!-- Expanded Content -->
+                    <div id="spoken-english" class="hidden mt-4 space-y-3 text-xs text-slate-300 bg-black/20 p-3.5 rounded-lg border border-slate-800">
+                        <div><strong class="text-purple-300">Week 1:</strong> Foundations & Confidence Building (Grammar Refresher, Overcoming Anxiety)</div>
+                        <div><strong class="text-purple-300">Week 2:</strong> Pronunciation & Fluency (Vocabulary expansion, phonetics, accent shaping)</div>
+                        <div><strong class="text-purple-300">Week 3:</strong> Social & Business Communication (Interview prep, emails, networking)</div>
+                        <div><strong class="text-purple-300">Week 4:</strong> Public Speaking & Mock Presentations (Live speeches, peer reviews)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Healthy Lifestyle -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between cursor-pointer" onclick="toggleOutline('healthy-lifestyle')">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-300">Life-changing</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Healthy Lifestyle</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Design a balanced diet, incorporate productive habits, establish quality sleep hygiene, and master somatic energy maintenance.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/80">
+                    <button class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1">
+                        <span>Show Weekly Outline</span>
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300" id="icon-healthy-lifestyle"></i>
+                    </button>
+                    <!-- Expanded Content -->
+                    <div id="healthy-lifestyle" class="hidden mt-4 space-y-3 text-xs text-slate-300 bg-black/20 p-3.5 rounded-lg border border-slate-800">
+                        <div><strong class="text-emerald-300">Week 1:</strong> Foundations of Nutrition (Macro/micro balance, meal design, clean hydration)</div>
+                        <div><strong class="text-emerald-300">Week 2:</strong> Physical Wellness (At-home mobility, strength metrics, active living routines)</div>
+                        <div><strong class="text-emerald-300">Week 3:</strong> Sleep Optimization & Circadian Rhythm (Tackling insomnia, ideal sleep hygiene)</div>
+                        <div><strong class="text-emerald-300">Week 4:</strong> Habit Architecture (Building sustainable discipline, tracking progress)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Human Psychology -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between cursor-pointer" onclick="toggleOutline('human-psychology')">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-xl">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded bg-amber-500/10 text-amber-300">Essential</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Human Psychology</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Gain insights into behavior, decode cognitive patterns, read body language, and acquire emotional intelligence tools.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/80">
+                    <button class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1">
+                        <span>Show Weekly Outline</span>
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300" id="icon-human-psychology"></i>
+                    </button>
+                    <!-- Expanded Content -->
+                    <div id="human-psychology" class="hidden mt-4 space-y-3 text-xs text-slate-300 bg-black/20 p-3.5 rounded-lg border border-slate-800">
+                        <div><strong class="text-amber-300">Week 1:</strong> Introduction to Behavior (How thoughts formulate, conscious vs. subconscious)</div>
+                        <div><strong class="text-amber-300">Week 2:</strong> Cognitive Biases & Mind Traps (Identifying faulty reasoning, shifting perspectives)</div>
+                        <div><strong class="text-amber-300">Week 3:</strong> Emotional Intelligence (EQ over IQ, managing triggers, emotional mastery)</div>
+                        <div><strong class="text-amber-300">Week 4:</strong> Social Dynamics (Decoding body language, reading micro-expressions)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Relaxation Therapy -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between cursor-pointer" onclick="toggleOutline('relaxation-therapy')">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 text-xl">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded bg-sky-500/10 text-sky-300">Holistic</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Relaxation Therapy</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        De-stress with proven somatic relaxation techniques, sound breathing habits, and interactive mindfulness exercises.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/80">
+                    <button class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1">
+                        <span>Show Weekly Outline</span>
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300" id="icon-relaxation-therapy"></i>
+                    </button>
+                    <!-- Expanded Content -->
+                    <div id="relaxation-therapy" class="hidden mt-4 space-y-3 text-xs text-slate-300 bg-black/20 p-3.5 rounded-lg border border-slate-800">
+                        <div><strong class="text-sky-300">Week 1:</strong> Physiology of Stress (Adrenaline, cortisol effects, biological markers)</div>
+                        <div><strong class="text-sky-300">Week 2:</strong> Deep Breathwork & Box Breathing (Vagus nerve stimulation, balancing nervous system)</div>
+                        <div><strong class="text-sky-300">Week 3:</strong> Progressive Muscle Relaxation (PMR, mindfulness, sensory scans)</div>
+                        <div><strong class="text-sky-300">Week 4:</strong> Sound & Visual Guidance (Sound baths, somatic anchoring, designing home oasis)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Research Methodology -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between cursor-pointer" onclick="toggleOutline('research-methodology')">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-xl">
+                            <i class="fa-solid fa-flask"></i>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded bg-purple-500/10 text-purple-300">Academic</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Research Methodology</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Draft proposals, gather clean data, format qualitative/quantitative workflows, and excel in APA/Harvard referencing formats.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/80">
+                    <button class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1">
+                        <span>Show Weekly Outline</span>
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300" id="icon-research-methodology"></i>
+                    </button>
+                    <!-- Expanded Content -->
+                    <div id="research-methodology" class="hidden mt-4 space-y-3 text-xs text-slate-300 bg-black/20 p-3.5 rounded-lg border border-slate-800">
+                        <div><strong class="text-purple-300">Week 1:</strong> Designing Research Problems (Developing core hypotheses, literature review strategies)</div>
+                        <div><strong class="text-purple-300">Week 2:</strong> Qualitative & Quantitative Paradigms (Surveys, thematic coding, data collection)</div>
+                        <div><strong class="text-purple-300">Week 3:</strong> Basic Statistical Tools (Descriptive analytics, writing results)</div>
+                        <div><strong class="text-purple-300">Week 4:</strong> Referencing & Plagiarism Ethics (APA, Harvard, editing professional papers)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Family & Couple Therapy -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between cursor-pointer" onclick="toggleOutline('family-couple-therapy')">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400 text-xl">
+                            <i class="fa-solid fa-people-roof"></i>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded bg-pink-500/10 text-pink-300">Relational</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Family & Couple Therapy</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Identify household codependency patterns, resolve conflicts non-violently, set borders, and build warm marital dynamics.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/80">
+                    <button class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1">
+                        <span>Show Weekly Outline</span>
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300" id="icon-family-couple-therapy"></i>
+                    </button>
+                    <!-- Expanded Content -->
+                    <div id="family-couple-therapy" class="hidden mt-4 space-y-3 text-xs text-slate-300 bg-black/20 p-3.5 rounded-lg border border-slate-800">
+                        <div><strong class="text-pink-300">Week 1:</strong> Systems Theory (Understanding household dynamics, transactional analysis)</div>
+                        <div><strong class="text-pink-300">Week 2:</strong> Communication Pitfalls (Criticism, defensiveness, stonewalling fixes)</div>
+                        <div><strong class="text-pink-300">Week 3:</strong> Resolving Generational Trauma (Attachment styles, healing emotional cycles)</div>
+                        <div><strong class="text-pink-300">Week 4:</strong> Creating Boundary Frameworks (Setting safe borders, co-parenting tips)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: Career Counselling -->
+            <div class="glass-card rounded-2xl p-6 flex flex-col justify-between cursor-pointer md:col-span-2 lg:col-span-1" onclick="toggleOutline('career-counselling')">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-yellow-500/10 flex items-center justify-center text-yellow-400 text-xl">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
+                        <span class="text-xs font-semibold px-2.5 py-1 rounded bg-yellow-500/10 text-yellow-300">Practical</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Career Counselling</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Assess your skills, structure premium resumes, perfect LinkedIn networking, and ace modern corporate interviews.
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/80">
+                    <button class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-1">
+                        <span>Show Weekly Outline</span>
+                        <i class="fa-solid fa-chevron-down transition-transform duration-300" id="icon-career-counselling"></i>
+                    </button>
+                    <!-- Expanded Content -->
+                    <div id="career-counselling" class="hidden mt-4 space-y-3 text-xs text-slate-300 bg-black/20 p-3.5 rounded-lg border border-slate-800">
+                        <div><strong class="text-yellow-300">Week 1:</strong> Aptitude & IKIGAI Discovery (Interests assessment, industry alignment)</div>
+                        <div><strong class="text-yellow-300">Week 2:</strong> Modern CV & Portfolio Development (Crafting premium, ATS-compliant CVs)</div>
+                        <div><strong class="text-yellow-300">Week 3:</strong> Digital Brand & LinkedIn (Optimizing profiles, digital outreach hacks)</div>
+                        <div><strong class="text-yellow-300">Week 4:</strong> Advanced Mock Interviews (Answering difficult questions, salary negotiations)</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Detailed Call to Action and Contact Section -->
+    <section class="max-w-4xl mx-auto px-4 mt-20 text-center">
+        <div class="relative rounded-3xl p-8 md:p-12 overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl">
+            <div class="absolute -top-12 -left-12 w-48 h-48 bg-purple-500/15 rounded-full blur-2xl"></div>
+            <div class="absolute -bottom-12 -right-12 w-48 h-48 bg-indigo-500/15 rounded-full blur-2xl"></div>
+
+            <div class="relative z-10 max-w-2xl mx-auto">
+                <h2 class="text-3xl font-extrabold text-white">Secure Your Seat Today</h2>
+                <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                    Batch limits are capped to ensure dedicated individual attention. Pick your program and contact us immediately to complete registration details.
+                </p>
+
+                <!-- Financial Highlight Box -->
+                <div class="inline-flex flex-col sm:flex-row gap-4 items-center justify-center bg-black/30 py-3.5 px-6 rounded-2xl border border-slate-800 my-8">
+                    <div class="text-slate-300 text-sm font-medium">
+                        Monthly Installment Option Available
+                    </div>
+                    <div class="hidden sm:block text-slate-600">|</div>
+                    <div class="text-purple-400 font-extrabold text-lg">
+                        5,000 PKR <span class="text-slate-400 text-xs font-normal">/ Full Course</span>
+                    </div>
+                </div>
+
+                <!-- Fast Contact Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/923079043130" target="_blank" class="px-8 py-3.5 rounded-xl font-bold bg-green-600 hover:bg-green-500 text-white transition-colors flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        Message on WhatsApp
+                    </a>
+                    <a href="mailto:asifakiran68@gmail.com" class="px-8 py-3.5 rounded-xl font-bold bg-white/10 hover:bg-white/15 text-slate-200 transition-all border border-white/10 flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-envelope"></i>
+                        Email Admission Desk
+                    </a>
+                </div>
+
+                <div class="mt-8 text-xs text-slate-500">
+                    Nexamind Academy • For any questions, call us directly at <span class="text-purple-400 font-semibold">03079043130</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-16 text-slate-500 text-xs">
+        <p>&copy; 2026 Nexamind Academy. All Rights Reserved. Empowering learners globally.</p>
+    </footer>
+
+    <!-- Interactive script for expanding course details -->
+    <script>
+        function toggleOutline(courseId) {
+            const el = document.getElementById(courseId);
+            const icon = document.getElementById('icon-' + courseId);
+            
+            if (el.classList.contains('hidden')) {
+                // Hide any other active states if clean experience is preferred (optional)
+                el.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                el.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+    </script>
+</body>
+</html>
